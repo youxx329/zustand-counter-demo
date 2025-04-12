@@ -10,7 +10,7 @@ function App() {
   const [selected, setSelected] = useState(''); // 어떤 버튼이 선택됐는지 저장
 
   return (
-    <div className="text-center mt-5">
+    <div className="center-wrapper text-center">
       <h1>counter: {count}</h1>
 
       <ButtonGroup className="custom-button-group mt-3">
@@ -43,7 +43,7 @@ function App() {
           }}
           className="custom-toggle"
         >
-          10씩 증가
+          + 10
         </ToggleButton>
 
         <ToggleButton
@@ -75,7 +75,7 @@ function App() {
           }}
           className="custom-toggle"
         >
-          10씩 감소
+          - 10
         </ToggleButton>
 
         <ToggleButton

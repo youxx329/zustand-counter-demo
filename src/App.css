@@ -1,7 +1,9 @@
 h1 {
-  margin-bottom: 30px !important;
-  margin-top: 300px !important;
+  font-size: 3.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1.5rem !important;
 }
+
 .toggle-group {
   border-radius: 10px;
   overflow: hidden;
@@ -13,10 +15,48 @@ h1 {
   border-radius: 0;
   color: #dc3545;
   transition: background-color 0.2s ease;
+  font-size: 1.25rem !important;
+  padding: 0.75rem 1.5rem !important;
 }
 
 /* Bootstrap 내부 클래스 .btn-check + + .btn 활용 */
 input[type='radio']:checked + .custom-toggle {
   background-color: #dc3545;
   color: white;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+
+  body,
+html {
+  padding: 0 8px 0 8px;
+}
+  h1 {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .custom-button-group {
+    width: 100%;
+  }
+  .custom-toggle {
+    font-size: 0.9rem !important;
+    padding: 0.7rem 0.9rem !important;
+    width: 100%;
+  }
 }
