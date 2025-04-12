@@ -41,11 +41,10 @@ html {
 }
 
 @media (max-width: 500px) {
-
   body,
-html {
-  padding: 0 8px 0 8px;
-}
+  html {
+    padding: 0 8px 0 8px;
+  }
   h1 {
     font-size: 2rem !important;
     font-weight: bold !important;
@@ -56,7 +55,7 @@ html {
   }
   .custom-toggle {
     font-size: 0.9rem !important;
-    padding: 0.7rem 0.9rem !important;
+    padding: 0.4rem 0.6rem !important;
     width: 100%;
   }
 }
