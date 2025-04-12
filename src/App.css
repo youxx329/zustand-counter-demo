@@ -1,0 +1,22 @@
+h1 {
+  margin-bottom: 30px !important;
+  margin-top: 300px !important;
+}
+.toggle-group {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #dc3545;
+}
+
+/* 버튼 기본 상태 */
+.custom-toggle {
+  border-radius: 0;
+  color: #dc3545;
+  transition: background-color 0.2s ease;
+}
+
+/* Bootstrap 내부 클래스 .btn-check + + .btn 활용 */
+input[type='radio']:checked + .custom-toggle {
+  background-color: #dc3545;
+  color: white;
+}
